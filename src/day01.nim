@@ -3,14 +3,10 @@ import streams
 from strutils import parseInt
 
 proc main() =
-  var strm = newFileStream("day01.txt", fmRead)
-  var line = ""
   var nums = initIntSet()
 
-  if not isNil(strm):
-    while strm.readLine(line):
-      nums.incl(parseInt(line))
-    strm.close()
+  for line in lines("day01.txt"):
+    nums.incl(parseInt(line))
 
   echo "part one:"
   for a in nums:
