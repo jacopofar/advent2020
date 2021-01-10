@@ -11,6 +11,7 @@ To run, you need Nim (I use Nim 1.4), go in the src folder and run `nim r dayXX.
 - [x] Day 1
 - [x] Day 2
 - [x] Day 3
+- [x] Day 4
 
 
 ### License
